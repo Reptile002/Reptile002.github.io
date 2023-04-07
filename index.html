@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <div class="howMuchToPay">
+
+        <div class="text">
+            <h1 class="header">Kalkulator Kosztu Trasy</h1>
+        </div>
+
+        <form>
+            <div class="Input">
+                <p class="label">Cena paliwa:</p>
+                <input class="inputField" type="number" id="fuelCost" name="fuelCost" >
+            </div>
+            <div class="Input">
+                <p class="label">Spalanie na 100 km:</p>
+                <input class="inputField" type="number" id="consumption" name="consumption" >
+            </div>
+            <div class="Input">    
+                <p class="label">Dystans:</p>        
+                <input class="inputField" type="number" id="distance" name="distance" >
+            </div>
+            <div class="Input">
+                <p class="label">Ilosc osob w samochodzie:</p> 
+                <input class="inputField" type="number" id="pplInCar" name="pplInCar" >
+            </div>
+            <div class="flex">
+                <button class="inputButt" onclick="howMuchToPay(event)">Oblicz</button>
+            </div>
+            
+          </form>
+
+          <div id="result" class="result"></div>
+    </div>
+</body>
+</html>
