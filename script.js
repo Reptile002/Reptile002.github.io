@@ -18,14 +18,15 @@ const howMuchToPay = (event) => {
     let cost = [usedFuel * fuelCost, usedFuel * fuelCost / peopleInCar]
     result = document.getElementById(`result`).innerHTML =`
     <p class="costTxt"><br>
-        Łączny koszt paliwa : <p class="thiccTxt">${cost[0].toFixed(2)} PLN</p><hr class ="line"> Cena za osobę : <p class="thiccTxt">${cost[1].toFixed(2)} PLN</p>
+        Łączny koszt paliwa : <p class="thiccTxt">${cost[0].toFixed(2)} PLN</p><hr class ="line"> <p class ="costTxt">Cena za osobę </p> <p class="thiccTxt">${cost[1].toFixed(2)} PLN</p>
     </p>`}
 
     return result
 }
 
+/*
 const calculateFuelConsumption = (consumedFuel, distance) => {
     let fuelConsumption = consumedFuel / distance * 100
     return fuelConsumption
 }
-
+*/
