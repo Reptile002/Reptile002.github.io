@@ -71,6 +71,7 @@ body {
     font-size: 25px;
 }
 .inputField{
+    outline: none;
     padding: 1.2vh;
     border-style: none;
     border-color: black;
