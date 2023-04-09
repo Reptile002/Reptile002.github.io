@@ -36,8 +36,10 @@ body {
     }
 }
 .Input{
-    margin: 2%;
-    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
 }
 .inputButt {
 	background-color:rgb(20, 180, 20);
@@ -81,29 +83,31 @@ body {
 }
 .inputField{
     padding: 1.2vh;
-    border-radius: 10px;
-    border-style: solid;
+    border-style: none;
     border-color: black;
+    border-bottom: 1px solid black;
     font-size: 15px;
-    width: 50vw;
+    width: 40px;
     max-width: 300px;
     background-color: rgba(255, 255, 255, 0);
 }
+
 .inputField:focus{
-    outline: none !important;
-    border: 2px solid rgb(60, 167, 60);
+    outline: none;
+    border-bottom: 1px solid rgb(60, 167, 60);
     animation-name: animation1;
     animation-duration: 200ms;
 }
 @keyframes animation1 {
-    0% {border: 2px solid black;}
-    100% {border: 2px solid rgb(60, 167, 60);}
+    0% {    border-bottom: 1px solid black;}
+    100% {border-bottom: 1px solid rgb(60, 167, 60);}
 }
 
 .inputField::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
+
 .flex{
     display: flex;
     justify-content: center;
@@ -113,18 +117,24 @@ body {
     margin-bottom: 10%;
 }
 .costTxt{
-    font-size: 20px;
+    font-size: 18px;
 }
 .line{
-    margin-left: 0;
     height: 2px;
     border: none;
     background-color: black;
 }
-.label{
-    font-size: 16px;
-    margin-bottom: 1%;
+.line2{
+        height: 2px;
+    border: none;
+    background-color: black;
+
 }
+
 .errorTxt{
+    color: red;
+}
+
+.inputField:focus + label {
     color: red;
 }

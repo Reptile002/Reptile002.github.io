@@ -2,11 +2,12 @@
 
 const howMuchToPay = (event) => {
     event.preventDefault()
-    let fuelCost = document.getElementById(`fuelCost`).value
-    let fuelConsumption = document.getElementById(`consumption`).value
-    let distance = document.getElementById(`distance`).value
-    let peopleInCar = document.getElementById(`pplInCar`).value
+    let fuelCost = document.getElementById(`fuelCost`).value.replace(`,`,`.`)
+    let fuelConsumption = document.getElementById(`consumption`).value.replace(`,`,`.`)
+    let distance = document.getElementById(`distance`).value.replace(`,`,`.`)
+    let peopleInCar = document.getElementById(`pplInCar`).value.replace(`,`,`.`)
     let result = null
+    console.log(fuelCost, fuelConsumption, distance, peopleInCar)
 
     if(peopleInCar == 0){
         result = document.getElementById(`result`).innerHTML =`
