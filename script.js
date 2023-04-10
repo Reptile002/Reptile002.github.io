@@ -25,3 +25,9 @@ const howMuchToPay = (event) => {
     return result
 }
 
+/*
+const calculateFuelConsumption = (consumedFuel, distance) => {
+    let fuelConsumption = consumedFuel / distance * 100
+    return fuelConsumption
+}
+*/
