@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oblicz Koszt Trasy ⛽</title>
+    <meta name="google-site-verification" content="sjkPsWdP_HZfDqnXbn10VC7_ScN0MULTxG30zKA11BQ" />
+    <meta name="description" content="Podając kilka parametrów oblicz koszt paliwa planowanej lub przejechanej trasy">
+
+    <title>Kalkulator Paliwa, Oblicz Koszt Planowanej Trasy - Kalkulator Kosztu Trasy</title>
+
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    
     <script src="script.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2054897504227642"
+     crossorigin="anonymous"></script>
+
 </head>
 <body>
+<div class="absolute">
+    <div class="main">
 
-    <div class="howMuchToPay">
-
-        <div class="text">
-            <h1 class="header">Kalkulator Kosztu Trasy ⛽</h1>
+        <div class="headerText">
+            <h1>Kalkulator Kosztu Trasy ⛽</h1>
         </div>
 
+        <div class="mainFlex">
+
         <form>
-            <div class="Input">
+            <div class="inputRow">
                 <label>💲 Cena paliwa : &nbsp</label>
                 <input class="inputField" type="number" id="fuelCost" name="fuelCost" >
                 <label>&nbsp PLN</label>
             </div>
-            <div class="Input">
+            <div class="inputRow">
                 <label>🔥 Spalanie : &nbsp</label> 
                 <input class="inputField" type="number" id="consumption" name="consumption" >
                 <label>&nbsp L/100km</Label></label> 
             </div>
-            <div class="Input">    
+            <div class="inputRow">    
                 <label>📏 Dystans : &nbsp</label>   
                 <input class="inputField" type="number" id="distance" name="distance" >
                 <label>&nbsp KM</label>  
             </div>
-            <div class="Input">
-                <label>👤 Ilosc osob w samochodzie : &nbsp</label>
+            <div class="inputRow">
+                <label>👤 Osoby w samochodzie : &nbsp</label>
                 <input class="inputField" type="number" id="pplInCar" name="pplInCar" >
             </div>
             <div class="flex">
                 <button class="inputButt" onclick="howMuchToPay(event)">Oblicz</button>
             </div>
-            
-          </form>
+            <div id="err"></div>
+        </form>
 
-          <div id="result" class="result"></div>
+            <div id="result" class="result"></div>
+
+        </div>
+
     </div>
+    
+</div>
 
     
 </body>
